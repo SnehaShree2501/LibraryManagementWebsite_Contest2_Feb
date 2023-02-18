@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Library Management System</title>
+</head>
+<body>
+        <h1>Library Management System</h1>
+        <div class="container">
+        <form>
+          <label for="book-name">Book Name:&nbsp;</label>
+          <input type="text" id="book-name" name="book-name"><br>
+        
+          <label for="issued-to">Issued To:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" id="issued-to" name="issued-to"><br>
+        
+          <button type="button" onclick="issueBook()">Issue Book</button>
+        </form>
+        </div>
+        <table id="issued-books">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Book Name</th>
+              <th>Issued To</th>
+              <th>Issued Time</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <script src="manage.js"></script>
+</body>
+</html>
